@@ -1,9 +1,11 @@
 for num in range(101):
-    string = ""
-    if num % 3 == 0:
-        string = string + "Fizz"
-    if num % 5 == 0:
-        string = string + "Buzz"
-    if num % 5 != 0 and num % 3 != 0:
-        string = string + str(num)
-    print(string)
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+        continue
+    elif num % 3 == 0:
+        print("Fizz")
+        continue
+    elif num % 5 == 0:
+        print("Buzz")
+        continue
+    print(num)
