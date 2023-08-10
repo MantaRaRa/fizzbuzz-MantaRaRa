@@ -1,11 +1,13 @@
-for num in range(101):
-    if num % 3 == 0 and num % 5 == 0:
+counter = 1
+
+while counter <= 100:
+    if counter % 3 == 0 and counter % 5 == 0:
         print("FizzBuzz")
-        continue
-    elif num % 3 == 0:
+    elif counter % 3 == 0:
         print("Fizz")
-        continue
-    elif num % 5 == 0:
+    elif counter % 5 == 0:
         print("Buzz")
-        continue
-    print(num)
+    else:
+        print(counter)
+    
+    counter += 1
